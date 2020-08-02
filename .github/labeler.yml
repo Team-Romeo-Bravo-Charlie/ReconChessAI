@@ -1,2 +1,5 @@
 workflow:
   - any: ['./.github/*.yml', './.github/workflows/*.yml']
+
+task:
+  - ./*.md
