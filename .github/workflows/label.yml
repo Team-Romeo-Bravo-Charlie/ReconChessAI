@@ -8,13 +8,13 @@
 name: Labeler
 on: [pull_request]
 
+
+
 jobs:
-  label:
-    workflow: 
-      - .github/workflow/*
-    
-  runs-on: ubuntu-latest
+  triage:
+    runs-on: ubuntu-latest
     steps:
     - uses: actions/labeler@v2
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        workflow: .github/workflows/*
