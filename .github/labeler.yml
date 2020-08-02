@@ -1,2 +1,2 @@
 workflow:
-  -any: ["./github/*.yml", "./github/workflows/*.yml"]
+  -any: ['./github/*.yml', './github/workflows/*.yml']
